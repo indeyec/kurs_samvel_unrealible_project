@@ -1,6 +1,7 @@
-<script setup>
+<!-- <script setup>
 import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
+import Generate from './components/Generate.vue'
 </script>
 
 <template>
@@ -11,6 +12,9 @@ import TheWelcome from './components/TheWelcome.vue'
   <main>
     <TheWelcome />
   </main>
+  <footer>
+    <Generate />
+  </footer>
 </template>
 
 <style scoped>
@@ -18,4 +22,15 @@ header{
   margin-left: 10px;
   
 }
-</style>
+</style> -->
+<template>
+  <div id="app">
+    <router-view></router-view>
+  </div>
+</template>
+
+<script>
+export default {
+  // Логика корневого компонента App
+};
+</script>
