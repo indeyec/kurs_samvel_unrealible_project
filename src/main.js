@@ -1,18 +1,28 @@
 import './assets/main.css'
 
-import Vue from 'vue';
-import App from './App.vue';
-import router from '../router/router';
+import { createApp } from 'vue'
+import App from './App.vue'
+import DarkTema from '../src/components/DarkTema.vue'
+import GeneratePizza from '../src/components/GeneratePizza.vue'
+import Carts from '../src/components/Carts.vue'
+import Pizza from '../src/components/Pizza.vue'
+import Register from '../src/components/Register.vue'
+import Search from '../src/components/Search.vue'
+import About from '../src/components/About.vue'
 
-Vue.config.productionTip = false;
 
-new Vue({
-  render: (h) => h(App),
-  router, // Подключаем маршрутизацию к приложению
-}).$mount('#app');
+createApp(App).mount('#app')
 
+createApp(DarkTema).mount('#dt')
 
-// import { createApp } from 'vue'
-// import App from './App.vue'
+createApp(GeneratePizza).mount('#gp')
 
-// createApp(App).mount('#app')
+createApp(Carts ).mount('#carts')
+
+createApp(Pizza).mount('#pizza')
+
+createApp(Register).mount('#reg')
+
+createApp(Search).mount('#search')
+
+createApp(About).mount('#about')

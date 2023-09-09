@@ -1,12 +1,30 @@
-<!-- <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
-import Generate from './components/Generate.vue'
+<script>
+import DarkTema from './components/DarkTema.vue'
+import GeneratePizza from './components/GeneratePizza.vue'
+import Carts from './components/Carts.vue'
+import Pizza from './components/Pizza.vue'
+import Register from './components/Register.vue'
+import Search from './components/Search.vue'
+import About from './components/About.vue'
+
+export default{
+  components: {
+  DarkTema,
+  GeneratePizza,
+  Carts,
+  Pizza,
+  Register,
+  Search,
+  About,
+  }
+}
 </script>
 
 <template>
-  <header>
-      <HelloWorld />
+
+  
+  <!-- <header>
+      <DarkTema />
   </header>
 
   <main>
@@ -14,7 +32,7 @@ import Generate from './components/Generate.vue'
   </main>
   <footer>
     <Generate />
-  </footer>
+  </footer> -->
 </template>
 
 <style scoped>
@@ -22,15 +40,4 @@ header{
   margin-left: 10px;
   
 }
-</style> -->
-<template>
-  <div id="app">
-    <router-view></router-view>
-  </div>
-</template>
-
-<script>
-export default {
-  // Логика корневого компонента App
-};
-</script>
+</style>
