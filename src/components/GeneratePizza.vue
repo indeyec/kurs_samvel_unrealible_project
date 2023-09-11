@@ -47,23 +47,24 @@
         <!-- Дополнительные опции (например, острая приправа) -->
         <div class="option">
           <label>Дополнительно:</label>
-          <input type="checkbox" v-model="spicy" class="checkbox">Острая приправа
+          <input type="checkbox" v-model="spicy" class="checkbox">Острый соус
         </div>
   
         <!-- Количество порций -->
         <div class="option">
-          <label>Количество порций:</label>
+          <label>Количество пицц:</label>
           <input type="number" v-model="quantity" min="1" class="input">
         </div>
       </div>
   
-      <!-- Кнопка для заказа -->
-      <button @click="placeOrder" class="order-button">Заказать пиццу</button>
-  
-      <!-- Итоговая цена -->
       <div class="total-price">
         <h3>Итоговая цена: {{ calculateTotalPrice() }} руб.</h3>
       </div>
+
+      <button @click="placeOrder" class="order-button">Заказать пиццу</button>
+  
+      <!-- Итоговая цена -->
+    
     </div>
   </template>
   
@@ -79,16 +80,16 @@
         spicy: false,
         quantity: 1,
         prices: {
-          small: 10,
-          medium: 12,
-          large: 14,
+          small: 400,
+          medium: 500,
+          large: 600,
           thin: 0,
-          thick: 2,
-          tomato: 0,
-          white: 0,
-          bbq: 1,
-          topping: 1,
-          spicy: 1
+          thick: 20,
+          tomato: 10,
+          white: 10,
+          bbq: 10,
+          topping: 20,
+          spicy: 100
         }
       };
     },
@@ -110,31 +111,43 @@
   /* Стили для компонента */
   .pizza-generator {
     font-family: Arial, sans-serif;
-    max-width: 400px;
+    width: 1000px;
+    height: 500px;
     margin: 0 auto;
     padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
+    border: 3px solid black;
+    border-radius: 15px;
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 50px rgb(173, 110, 160);
+    margin-top: 100px;
+    background-color: rgb(173, 162, 167);
   }
-  
+  button{
+   margin-left: 400px;
+   margin-top: 30px;
+  }
   .title {
     font-size: 24px;
     text-align: center;
-    margin-bottom: 20px;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
   
   .option {
+    width: 150px;
     margin-bottom: 10px;
+    margin-right: 20px;
+    font-size: 18px;   
+    margin-left: 20px; 
   }
   
   .select {
     width: 100%;
     padding: 8px;
     font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border: 2px solid black;
+    border-radius: 15px;
   }
   
   .topping-list {
@@ -152,10 +165,12 @@
   
   .topping-checkbox {
     margin-right: 5px;
+    border: 2px solid black;
   }
   
   .checkbox {
     margin-right: 5px;
+border: 2px solid black;
   }
   
   .input {
@@ -167,11 +182,11 @@
   }
   
   .order-button {
-    background-color: #007BFF;
+    background-color: #37aa41;
     color: #fff;
     padding: 10px 20px;
     border: none;
-    border-radius: 4px;
+    border-radius: 15px;
     font-size: 18px;
     cursor: pointer;
   }
