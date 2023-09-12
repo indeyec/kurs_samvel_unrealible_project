@@ -44,8 +44,9 @@
     color: white;
     padding: 10px;
     border: none;
-    border-radius: 4px;
+    border-radius: 15px;
     cursor: pointer;
+    margin-top: 1px;
   }
   
   .search-container {
