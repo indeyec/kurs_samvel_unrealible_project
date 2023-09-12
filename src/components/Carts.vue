@@ -16,7 +16,7 @@
   export default {
     data() {
       return {
-        cartItems: [], // Массив выбранных пицц
+        cartItems: [], 
       };
     },
     methods: {
@@ -30,8 +30,7 @@
         return this.cartItems.reduce((total, pizza) => total + pizza.price, 0);
       },
       checkout() {
-        // Здесь вы можете добавить логику для оформления заказа, например, отправку данных на сервер
-        // После успешного заказа, можно очистить корзину
+       
         this.cartItems = [];
         alert('Заказ оформлен! Спасибо за покупку.');
       },
@@ -40,7 +39,9 @@
   </script>
   
   <style scoped>
-  /* Здесь вы можете добавить стили для компонента "Корзина" */
+
   </style>
 
   
+
+ 

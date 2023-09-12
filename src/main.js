@@ -9,6 +9,7 @@ import Pizza from '../src/components/Pizza.vue'
 import Register from '../src/components/Register.vue'
 import Search from '../src/components/Search.vue'
 import About from '../src/components/About.vue'
+import Profile from '../src/components/Profile.vue'
 
 
 createApp(App).mount('#app')
@@ -26,3 +27,4 @@ createApp(Register).mount('#reg')
 createApp(Search).mount('#search')
 
 createApp(About).mount('#about')
+createApp(Profile).mount('#profile')
