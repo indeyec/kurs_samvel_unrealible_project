@@ -65,7 +65,7 @@ img{
 	align-items: center;
 	background-color: white;
 	width: 370px;
-	height: 350px;
+	height: 380px;
 	border-radius: 40px;
 }
 
@@ -87,14 +87,14 @@ img{
 }
 
 .btn{
-	background-color: #F29857;
+	background-color: #2da764;
 	color: white;
 	width: 180px;
 	height: 40px;
 	font-size: 21px;
 	border-radius: 30px;
 	border: 0;
-	margin-top: 15px;
+	margin-top: 20px;
 	display: flex;
 	justify-content: center;
 	align-items: center;

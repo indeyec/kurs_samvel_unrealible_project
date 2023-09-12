@@ -54,6 +54,7 @@
             image: "src/components/icons/pngwing.com (14) (1).png",
             sizes: ["30 см", "40 см", "50 см"]
           },
+          
           // Другие пиццы...
         ],
         selectedSize: "",
@@ -103,9 +104,8 @@
   }
   
   .pizza-list {
-    /* display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px; */
+   
+   
     display: flex;
 	justify-content: center;
 	align-items: center;
@@ -117,6 +117,7 @@
     padding: 20px;
     border-radius: 15px;
     margin: 15px;
+    background-color: rgb(146, 118, 148);
    
   }
   
