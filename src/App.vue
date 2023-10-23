@@ -6,6 +6,7 @@ import Pizza from './components/Pizza.vue'
 import Register from './components/Register.vue'
 import Search from './components/Search.vue'
 import About from './components/About.vue'
+import axios from 'axios'
 
 export default{
   components: {
@@ -16,12 +17,28 @@ export default{
   Register,
   Search,
   About,
+  
+  },
+  async setup() {
+    
+  },
+  methods: {
+
+    async fetchUsers() {
+      try {
+        const response = await axios.get('https://jsonplaceholder.typicode.com/posts?_limit=10');
+        console.log(response)
+      } catch (e) {
+          alert('ошибка')
+        }
+      }
   }
-}
+};
+
 </script>
 
 <template>
-
+ 
   
   <!-- <header>
       <DarkTema />

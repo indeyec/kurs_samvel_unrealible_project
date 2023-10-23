@@ -1,6 +1,7 @@
 import './assets/main.css'
 
 import { createApp } from 'vue'
+// import store from './vuex/store'
 import App from './App.vue'
 import DarkTema from '../src/components/DarkTema.vue'
 import GeneratePizza from '../src/components/GeneratePizza.vue'
@@ -10,6 +11,9 @@ import Register from '../src/components/Register.vue'
 import Search from '../src/components/Search.vue'
 import About from '../src/components/About.vue'
 import Profile from '../src/components/Profile.vue'
+
+
+
 
 
 createApp(App).mount('#app')
@@ -27,4 +31,9 @@ createApp(Register).mount('#reg')
 createApp(Search).mount('#search')
 
 createApp(About).mount('#about')
+
 createApp(Profile).mount('#profile')
+
+// new Vue({
+// store
+// }).$mount('#app')
