@@ -1,4 +1,4 @@
-<!-- <template>
+<template>
   <div>
     <form @submit.prevent="submitForm">
       <div class="main">
@@ -33,9 +33,9 @@ export default {
     }
   }
 };
-</script> -->
+</script>
 
-<template xmlns="http://www.w3.org/1999/html">
+<!-- <template xmlns="http://www.w3.org/1999/html">
   <form @submit.prevent="register">
     <h2>Регистрация</h2>
     <br>
@@ -78,7 +78,7 @@ export default {
     },
   }
 }
-</script>
+</script> -->
 
 <style scoped>
 form > div {

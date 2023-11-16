@@ -51,7 +51,7 @@ img{
 
 .right_bar>a{
 	text-decoration: none;
-	color: #201df8;
+	color: black;
 	font-size: 28px;
 	margin-left: 15px;
 }
@@ -101,7 +101,7 @@ span{
 }
 
 .slider{
-	background-color: #bbbbbb;
+	background-color: #F29857;
 	width: 100%;
 	height: 300px;
 	margin-top: -200px;
@@ -115,7 +115,7 @@ span{
 
 
 .slide{
-	background-color: aliceblue;
+	background-color: rgb(116, 149, 179);
 	width: 800px;
 	height: 250px;
 	border-radius: 25px;
@@ -126,13 +126,13 @@ span{
 }
 
 .slide_text{
-	color: #D03100;
+	color: #000000;
 	font-size: 72px;
 }
 
 .slide_text_bot{
 	font-size: 30px;
-	color: #828282;
+	color: #222222;
 }
 
 .slide_right>img{
@@ -144,7 +144,7 @@ span{
 
 .footer{
 	width: 100%;
-	background-color: white;
+	
 	height: 100px;
 	margin-top: 200px;
 	display: flex;
